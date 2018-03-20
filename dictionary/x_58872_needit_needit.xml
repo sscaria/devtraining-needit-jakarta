@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="3" type="collection">
+        <element label="New Audio" mandatory="true" max_length="40" name="u_audio_2" type="audio"/>
+        <element attributes="omit_sys_original=true" label="New Currency" mandatory="true" max_length="20" name="u_currency_9" type="currency"/>
+        <element label="Example" mandatory="true" max_length="100" name="u_example" type="icon"/>
+        <element label="New Field Name" mandatory="true" max_length="80" name="u_field_name_3" type="field_name"/>
+        <element label="New Floating Point Number" mandatory="true" max_length="40" name="u_float_4" type="float"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="New List" mandatory="true" max_length="1024" name="u_glide_list_4" type="glide_list"/>
+        <element label="New HTML" mandatory="true" max_length="65536" name="u_html_5" type="html"/>
+        <element attributes="edge_encryption_enabled=true" label="New Journal" mandatory="true" max_length="4000" name="u_journal_2" type="journal"/>
+        <element label="New Long" mandatory="true" max_length="40" name="u_longint_5" type="longint"/>
+        <element label="New Reference" mandatory="true" max_length="32" name="u_reference_6" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element label="Human Resources" sequence="0" value="hr"/>
+                <element label="Facilities" sequence="1" value="facilities"/>
+                <element label="Legal" sequence="2" value="legal"/>
+            </choice>
+        </element>
+        <element label="New Name-Value Pairs" mandatory="true" max_length="4000" name="u_simple_name_values_6" type="simple_name_values"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="shooooooot dis" mandatory="true" max_length="40" name="u_string_1" type="string">
+            <choice>
+                <element label="Choice 1" sequence="0" value="Choice 1"/>
+                <element label="Choice 2" sequence="1" value="Choice 2"/>
+                <element label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="base_start=true" label="New Table Name" mandatory="true" max_length="80" name="u_table_name_7" type="table_name"/>
+        <element attributes="edge_encryption_enabled=true" label="New URL" mandatory="true" max_length="1024" name="u_url_8" type="url"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element label="Human Resources 1" sequence="0" value="hr1"/>
+                <element label="Human Resources 2" sequence="1" value="hr2"/>
+                <element label="Facilities 1" sequence="2" value="facilities 1"/>
+                <element label="Facilities 2" sequence="3" value="facilities 2"/>
+                <element label="Legal 1" sequence="4" value="legal 1"/>
+                <element label="Legal 2" sequence="5" value="legal 2"/>
+            </choice>
+        </element>
+        <element label="When Needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
